@@ -21,7 +21,14 @@
 
 <!-- end custom head snippets -->
 <style>
+  /* Space between the article citation and Abstract */
+  .page__content p:has(+ details) {
+    margin-bottom: 0.35em;
+  }
+
+  /* Space after each abstract dropdown */
   .page__content details {
+    margin-top: 0;
     margin-bottom: 1em;
   }
 </style>
