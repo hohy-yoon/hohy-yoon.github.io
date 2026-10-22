@@ -9,7 +9,7 @@ author_profile: true
 
 <p><em>The Wrath of Nations: Anger and Coercive Credibility in International Crises</em></p>
 
-<p>Why are some coercive threats more effective than others at influencing the outcomes of international crises? My book project addresses this question by investigating elite usage of emotion expressions, specifically anger. Through a combination of text-as-data, experimental, and qualitative methods, I show that combining expressions of anger with threats increases the threats' credibility and effectiveness. In doing so, I offer a new data on world political leaders' public statements of threats and anger expressions between 1946-1996. (Under review at Cornell Studies in Security Affairs, <em>Cornell University Press<\em>)</p>
+<p>Why are some coercive threats more effective than others at influencing the outcomes of international crises? My book project addresses this question by investigating elite usage of emotion expressions, specifically anger. Through a combination of text-as-data, experimental, and qualitative methods, I show that combining expressions of anger with threats increases the threats' credibility and effectiveness. In doing so, I offer a new data on world political leaders' public statements of threats and anger expressions between 1946-1996. (Under review at Cornell Studies in Security Affairs, <em>Cornell University Press</em>)</p>
 
 <h2>Peer-Reviewed Publications</h2>
 
