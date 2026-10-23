@@ -31,7 +31,17 @@ author_profile: true
 
 <p>"International Reactions to Proposing Peace Talks in Interstate War" (with Michaela Mattes and Jessica Weeks, revise and resubmit at <em>International Studies Quarterly</em>)</p>
 
+<details>
+  <summary>Abstract</summary>
+  <p>Conventional wisdom suggests that proposing peace talks during wartime risks signaling weakness, emboldening opponents, and undermining domestic morale. Yet states often propose negotiations, particularly since World War II. In this manuscript, we explore the possibility that belligerents receive international benefits from offering to negotiate a peaceful ending to war. We first theorize how third-party observers—here, Americans—might respond to wartime peace proposals. We then test our conjectures using a survey experiment based on the Ukraine War. We find that offering to negotiate improves favorability toward the belligerent but does not produce tangible rewards such as greater support for economic cooperation or pressure on the opponent. Moreover, patently insincere peace proposals trigger significant international penalties. Our findings thus indicate that simply “being the side that wants peace” yields only modest international gains. At the same time, insincere proposals are potentially quite costly. Together, these dynamics imply that belligerents have limited international incentives to try to fool international observers by bogging down opponents with insincere peace talks, even in today’s pro-peace international system. Our findings also raise important new questions about the incentives behind wartime diplomacy.</p>
+</details>
+
 <p>"Who Governs Matters: Member States' Regime Types and Public Support for International Organizations" (with Sujeong Shim)</p>
+
+<details>
+  <summary>Abstract</summary>
+  <p>How does growing influence of authoritarian states affect public support for international organizations (IOs)? We argue that influential member states’ regime type provides citizens with a cue for evaluating IO legitimacy in democracies. As democratic publics generally associate nondemocracies with opaque governance practices and illiberal interests, information that nondemocracies are gaining greater institutional influence in an IO may reduce public support for the affected IO. Across four survey experiments in two democracies--the United States and South Korea---focusing on two major IOs---the UN Security Council and the IMF---we find that democratic publics are generally less willing to comply with or remain in IOs when governance reforms are described as empowering authoritarian rather than democratic states. These findings have important implications for the future of institutionalized multilateralism amid the rise of authoritarian states.</p>
+</details>
 
 <p>"Affective Updating: Why and How Threats Rely on Emotions" (with Jonathan Renshon)</p>
 
