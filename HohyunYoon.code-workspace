@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/_layouts": true,
+      "**/_sass": true,
+      "**/assets": true,
+      "**/_site": true,
+      "**/.jekyll-cache": true,
+      "**/vendor": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-vscode-remote.remote-containers",
+      "redhat.vscode-yaml",
+      "sissel.shopify-liquid"
+    ]
+  }
+}

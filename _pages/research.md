@@ -36,7 +36,7 @@ author_profile: true
   <p>Conventional wisdom suggests that proposing peace talks during wartime risks signaling weakness, emboldening opponents, and undermining domestic morale. Yet states often propose negotiations, particularly since World War II. In this manuscript, we explore the possibility that belligerents receive international benefits from offering to negotiate a peaceful ending to war. We first theorize how third-party observers—here, Americans—might respond to wartime peace proposals. We then test our conjectures using a survey experiment based on the Ukraine War. We find that offering to negotiate improves favorability toward the belligerent but does not produce tangible rewards such as greater support for economic cooperation or pressure on the opponent. Moreover, patently insincere peace proposals trigger significant international penalties. Our findings thus indicate that simply “being the side that wants peace” yields only modest international gains. At the same time, insincere proposals are potentially quite costly. Together, these dynamics imply that belligerents have limited international incentives to try to fool international observers by bogging down opponents with insincere peace talks, even in today’s pro-peace international system. Our findings also raise important new questions about the incentives behind wartime diplomacy.</p>
 </details>
 
-<p>"Who Governs Matters: Member States' Regime Types and Public Support for International Organizations" (with Sujeong Shim)</p>
+<p>"Who Governs Matters: Member States' Regime Types and Public Support for International Organizations" (with Sujeong Shim, under review)</p>
 
 <details>
   <summary>Abstract</summary>
@@ -46,3 +46,4 @@ author_profile: true
 <p>"Affective Updating: Why and How Threats Rely on Emotions" (with Jonathan Renshon)</p>
 
 <p>"Democratic Responsiveness in U.S. Foreign Policy" (with Sowon Park)</p>
+

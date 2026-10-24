@@ -1,101 +1,58 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# Hohyun Yoon's website
 
-![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")
+This is a cleaned copy of hohy-yoon/hohy-yoon.github.io based on commit ce0504d.
+The ZIP includes Git history. Cleanup changes are uncommitted on master so you can review them in VS Code before publishing.
 
-# Getting Started
+## Everyday editing
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Edit site-wide configuration in `_config.yml` and double check that the `url` is the one that you just selected in the previous step and that `repository` reflects the correct path for your repository.
-1. Add your site content, upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, under: Settings -> Pages -> Source: GitHub Actions
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+| Edit | File |
+| --- | --- |
+| Homepage | `_pages/about.md` |
+| Research and abstracts | `_pages/research.md` |
+| Teaching | `_pages/teaching.html` |
+| CV link | `_pages/cv.md` |
+| Menu | `_data/navigation.yml` |
+| Name, contact details, domain | `_config.yml` |
+| Abstract spacing and browser-tab icon | `_includes/head/custom.html` |
+| Profile photograph | `images/ProfilePhoto.jpg` |
+| Uploaded CV | `files/YoonCV.pdf` |
 
-See more info at https://academicpages.github.io/
+The CV page currently links to Google Drive. Updating files/YoonCV.pdf alone will not change that destination.
 
-### Additional Tutorials
+## Open and preview in VS Code
 
-Additional tutorials for working with the Academic Pages template can be found at the following sites:
-- https://jayrobwilliams.com/posts/2020/06/academic-website/
-
-## Running locally
-
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
-
-1. Clone the repository and made updates as detailed above.
-
-### Using a different IDE
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distributions and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try running `sudo apt install ruby-dev ruby-bundler nodejs` again.
-
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
-
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change to Markdown (*.md) and HTML files, while changes to the core template and configuration (i.e., `_config.yml`) will require stopping and restarting Jekyll.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
-
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-You can build and execute the container by running the following command in the repository:
+1. Extract the ZIP to a permanent folder. Open the extracted `hohy-yoon.github.io` folder in VS Code.
+2. Install and start Docker Desktop. Install Microsoft's Dev Containers extension in VS Code.
+3. Press Command-Shift-P and select **Dev Containers: Reopen in Container**.
+4. Allow the first container build to finish. Open http://localhost:4000/home.
+5. If preview has not started, open a terminal inside the container and run:
 
 ```bash
-chmod -R 777 .
-docker compose up
+bundle exec jekyll serve --host 0.0.0.0 --port 4000 --watch --config _config.yml,_config_docker.yml
 ```
 
-You should now be able to access the website from `localhost:4000`.
+Leave that terminal running. If the port is already in use, a preview server may already be running. Save edits and refresh your browser. Restart the server after changing _config.yml. The original container setup is preserved; it has not been run or verified in the cleanup environment.
 
-### Using the DevContainer in VS Code
+If Ruby and Bundler are already installed locally, an alternative is:
 
-If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development container configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
+```bash
+bundle install
+bundle exec jekyll serve --config _config.yml,_config_local.yml --host localhost --port 4000
+```
 
-# Maintenance
+The optional HohyunYoon.code-workspace file hides theme internals from the Explorer. It does not delete them. Opening the project folder normally shows all folders.
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+## Review, commit, and publish
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii), and additional maintainers would be welcome.
+1. In VS Code, open Source Control. Review the deletions and changed files listed in CLEANUP.md.
+2. Confirm the branch is master. Stage the changes and commit with a message such as `Remove unused template content`.
+3. Push (or Sync Changes) and sign in to GitHub if prompted. GitHub Desktop is not required.
+4. Watch the deployment in the repository's Actions tab. A successful deployment publishes the changes.
 
-## Bugfixes and enhancements
+Saving files and committing locally do not publish them; pushing master triggers deployment. If GitHub has newer commits, pull and resolve any differences before pushing; do not force push.
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of the template to your fork as well.
+Your production URL remains https://www.hohyunyoon.com. This cleanup does not change DNS or certificate settings.
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize, although [rebasing](https://git-scm.com/docs/git-rebase) the changes from this template will work along with manually [cherry picking](https://git-scm.com/docs/git-cherry-pick) the relevant commits. If you are not comfortable with the Git command line, you can save your various `.yml` configuration files and Markdown files, delete the repository, and fork it again. 
+## Theme files
 
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
-
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+Keep _includes, _layouts, _sass, assets, Gemfile, LICENSE, and the deployment/container files. These power the site even though most are not edited regularly. The theme's original license and attribution are retained.
